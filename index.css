@@ -1,0 +1,113 @@
+
+.container {
+  width: 18%; /* define a largura do campo */ 
+  position: relative;  /* cria o contexto de posicionamento do botão */ 
+  border: 1px solid black;
+  display: flex;
+        flex-direction: row;
+         justify-content: center;
+        align-items: center;
+        font-size: 15px;
+}
+label {display:block;}
+input {width: 87%;font-size: 15px;} /* define a largura do campo igual a largura do container */
+input,  button {padding: 10px;}
+button {
+  position: absolute;   
+  top: 0; 
+  right: 0;
+  font-size: 14px;
+  
+  /* posiciona o botão em relação ao container, mas
+  como o campo está exatamente contido no container
+  o posicionamento se dá também em relação ao campo */
+}
+
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        
+    }
+
+    .form{align-content: center;
+      display: flex;
+      justify-content: center;
+      }
+  
+  
+ body{
+    background: rgb(85, 167, 221);
+    font: normal 15pt Arial;
+    text-align: center;
+}   
+
+header {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 1000px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(52, 97, 128);
+    text-align: center;
+             
+     }
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        
+    }
+/*
+input.cancelamento{
+    width:120px;
+    height:30px;
+    font-size: 25px;
+    border-radius: 04px;
+    border: 1px solid black;
+    }
+
+input.buscar{height:30px;
+}
+*/
+
+p{
+    text-align: center;
+}
+
+ table th, table td{
+     padding: 20px 10px;
+     align-items: center;
+     text-align: center;
+     margin: 0 auto;
+ }
+
+ table{
+     border-collapse: collapse;
+     margin: 0 auto;
+ }

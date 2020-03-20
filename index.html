@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cancelamento</title>
+     
+    <!--<link rel="stylesheet" href="estilo.2.css">-->
+    
+  <link rel="stylesheet" href="https://sites.google.com/site/cancelamentocreddvol/index.css">
+ 
+</head>
+
+ 
+<body>
+    <header>
+        <h1>Consulta Cancelamento</h1>
+    </header>
+    <section class="section" id="section">
+                    
+            <form class="form" >
+                <label for="busca"></label>
+                
+                <div class="container">  
+                  <input type="number" class= "cancelamento" name="cancelamento" id="cancelamento" autofocus="cancelamento" onkeypress="buscar()" onkeyup="handleEnter(event)">
+                  <button type="button" class="buscar" value="buscar" onclick="buscar();mudaBackground();" id="button">&#128269;</button>
+                </div>
+              
+              </form>
+              <script type="text/javascript">
+              
+                document.getElementById("cancelamento").onkeypress= function(event){
+                    if (event.keyCode == 13 || event.which == 13){
+                      buscar();
+                    }
+                };
+            </script>
+              
+        
+
+        <div id="res" class="res">
+            
+            <strong> <p id="listagem"></p> </strong>
+
+        </div>
+
+        <div id="div">
+            <p id="listagem2">
+             <table class="table" id="table" >
+                 <thead class="thead" id="thead">
+                   <th id="loja" class="th"></th>
+                   <th id="cancelamentoTabela" class="th"></th>
+                   <th id="atendimento" class="th"></th> 
+                   <th id="data" class="th"></th>
+                   <th id="status" class="th"></th> 
+                 </thead>
+                 <tbody class="tbody">
+                     <td id="lojaRes" class="td"></td>
+                     <td id="cancelamentoRes" class="td"></td>
+                     <td id="atendimentoRes" class="td"></td>
+                     <td id="dataRes" class="td"></td>
+                     <td id="statusRes" class="td"></td>
+                 </tbody>
+               </table>
+             
+            </p>
+         </div id="div">
+
+
+    </section>
+    
+     <!--<script src="script.2.js"></script>-->
+     <script src="https://sites.google.com/site/cancelamentocreddvol/lista.js"></script>
+    <script src="https://sites.google.com/site/cancelamentocreddvol/index.js">/* chama o script.js */</script>   
+    
+</body>
+</html>
