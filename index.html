@@ -6,23 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cancelamento</title>
      
-    <!--<link rel="stylesheet" href="estilo.2.css">-->
+   <!--<link rel="stylesheet" href="index.css">-->
     
-    <link rel="stylesheet" href="https://sites.google.com/site/cancelamentocreddvol/index.sem.conteiner.css">
+  <link rel="stylesheet" href="https://sites.google.com/site/cancelamentocreddvol/index.css">
  
 </head>
-   
- <body>
+ 
+<body>
     <header>
         <h1>Consulta Cancelamento</h1>
     </header>
-    <section class="section" id="section">
-                  
-        <input type="number" class= "cancelamento" id="cancelamento" autofocus="cancelamento" onkeyup="buscar();mudaBackground();"><button class="button"onclick="buscar();mudaBackground();" onkeyup="buscar();mudaBackground();" id="button">&#128269;</button>
-              <div class="container">  
-                
-              </div>
+    <section class="section" id="section">           
+                   
               
+                <div class="container"> 
+                  <input type="number" class= "cancelamento" name="cancelamento" id="cancelamento" autofocus="cancelamento" onkeyup="buscar();mudaBackground();">
+                  <button class="buscar" value="buscar" onclick="buscar();mudaBackground();" onkeyup="buscar();mudaBackground();" id="button">&#128269;</button>
+                </div>
+              
+              </form>
               <script type="text/javascript">
               
                 document.getElementById("cancelamento").onkeyup= function(event){
@@ -30,9 +32,9 @@
                       buscar();mudaBackground();
                     }
                 };
-            </script>        
+            </script>          
         
-        <div id="res" class="res"><br>
+        <div id="res" class="res">
             
             <strong> <p id="listagem"></p> </strong>
 
@@ -61,9 +63,10 @@
          </div>
 
     </section>
-    	
-    <script src="https://sites.google.com/site/cancelamentocreddvol/lista.js"></script>          
-    <script src="https://sites.google.com/site/cancelamentocreddvol/index.js">/* chama o script.js */</script>  
+    
+     <!--<script src="script.2.js"></script>-->
+     <script src="https://sites.google.com/site/cancelamentocreddvol/lista.js"></script>
+    <script src="https://sites.google.com/site/cancelamentocreddvol/index.js">/* chama o script.js */</script>   
     
 </body>
 </html>
