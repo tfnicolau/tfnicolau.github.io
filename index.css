@@ -1,13 +1,16 @@
 
 .container {
-  width: 18%; /* define a largura do campo */ 
-  position: relative;  /* cria o contexto de posicionamento do botão */ 
-  border: 1px solid black;
-  display: flex;
-        flex-direction: row;
-         justify-content: center;
-        align-items: center;
-        font-size: 15px;
+    width: 18%; /* define a largura do campo */ 
+    position: relative;  /* cria o contexto de posicionamento do botão */ 
+    border: 1px solid black;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
 }
 label {display:block;}
 input {width: 87%;font-size: 15px;} /* define a largura do campo igual a largura do container */
@@ -49,14 +52,17 @@ header {
     align-items: center;
 
 }
-
+div.h1 {
+    text-align: center;
+    margin: auto;
+}
 h1 {
     color: white;
     text-align: center;
-    display: flex;
-    flex-direction: row;
+    display: block;
     justify-content: center;
     align-items: center;
+    margin: auto;
 
 }
 
