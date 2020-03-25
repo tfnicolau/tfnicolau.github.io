@@ -60,14 +60,14 @@ function buscar() {
        var div = document.getElementById('div')
        div.style.display = 'block';
        cancelamento.focus()
-       document.getElementById('cancelamento').Number = ""
+       cancelamento.innerText = ""
                 
     }if (procurar == undefined) {
         listagem.innerText = "Cancelamento não localizado!"
         var div = document.getElementById('div')
         div.style.display = 'none';
         cancelamento.focus()
-        document.getElementById('cancelamento').Number = ""
+        cancelamento.innerText = ""
         
     }   
               
@@ -89,12 +89,12 @@ document.getElementById('cancelamentoTabela').style.border = "2px solid black";
 document.getElementById('atendimento').style.border = "2px solid black";
 document.getElementById('data').style.border = "2px solid black";
 document.getElementById('status').style.border = "2px solid black";
-
+/*
 console.log(procurar)
 if (procurar.status = "Aguardando Filial") {
     { statusRes.style.backgroundColor = '#FF0000';
     }
-}else { statusRes.style.backgroundColor = '#32CD32';}
+}else { statusRes.style.backgroundColor = '#32CD32';}*/
 
 }
   
